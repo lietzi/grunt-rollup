@@ -36,6 +36,6 @@
     "rollup"
   ],
   "dependencies": {
-    "rollup": "0.54.0"
+    "rollup": "0.59.2"
   }
 }
