@@ -35,7 +35,6 @@ module.exports = function(grunt) {
       onwarn: null,
       paths: null,
       plugins:[],
-      pureExternalModules: false,
       sourceMap: false,
       sourceMapFile: null,
       sourceMapRelativePaths: false,
@@ -76,7 +75,6 @@ module.exports = function(grunt) {
         moduleContext: options.moduleContext,
         onwarn: options.onwarn,
         preferConst: options.preferConst,
-        pureExternalModules: options.pureExternalModules,
         treeshake: options.treeshake,
         output: { interop: options.interop }
       }).then(function(bundle) {
