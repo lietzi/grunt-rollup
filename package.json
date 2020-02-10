@@ -23,10 +23,10 @@
     "test": "grunt test"
   },
   "devDependencies": {
-    "grunt": "^1.0.1",
-    "grunt-contrib-clean": "^1.1.0",
-    "grunt-contrib-jshint": "^1.0.0",
-    "grunt-contrib-nodeunit": "^1.0.0"
+    "grunt": "^1.0.4",
+    "grunt-contrib-clean": "^2.0.0",
+    "grunt-contrib-jshint": "^2.1.0",
+    "grunt-contrib-nodeunit": "^2.0.0"
   },
   "peerDependencies": {
     "grunt": ">=0.4.0"
@@ -36,6 +36,6 @@
     "rollup"
   ],
   "dependencies": {
-    "rollup": "0.67.4"
-  }
+    "rollup": "1.31.0"
+  },
 }
