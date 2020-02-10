@@ -30,7 +30,6 @@ module.exports = function(grunt) {
       banner: null,
       footer: null,
       intro: null,
-      preferConst: false,
       outro: null,
       onwarn: null,
       paths: null,
@@ -74,7 +73,6 @@ module.exports = function(grunt) {
         context: options.context,
         moduleContext: options.moduleContext,
         onwarn: options.onwarn,
-        preferConst: options.preferConst,
         treeshake: options.treeshake,
         output: { interop: options.interop }
       }).then(function(bundle) {
@@ -101,7 +99,7 @@ module.exports = function(grunt) {
           sourcemapFile: sourceMapFile
         });
       }).then(function(result) {
-        var code = result.code;
+        var code = result.output[0].code;
 
         if (options.sourceMap === true) {
           var sourceMapOutPath = f.dest + '.map';
